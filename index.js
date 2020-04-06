@@ -1,6 +1,18 @@
 const farmAnimals = 'cow horse sheep pig chicken'
 
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(' ')
+
+const [Bessie, , Dolly, Babe, Little] = farmAnimals.split(' ')
+
+const [black_and_white, , black, pink] = farmAnimals.split(' ')
+
+
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+const [red, orange, yellow, green, blue, indigo, violet] = colors
+
+const [r, o, y, g, b,indg , v] = colors
+
+// const [, , , , , indg, ] = colors
 
 const muppet = {
   name: 'Kermit',
@@ -25,6 +37,22 @@ const k_muppet = {
   k_partner: 'Miss Piggy'
 };
 
+
+const { name, color, song, job, partner } = muppet
+
+const { k_name, k_color, k_job, k_partner } = k_muppet
+
+
+const { song_1, song_2, song_3, song_4} = k_muppet.k_album.the_muppet_movie
+
+
+// 1. Use destructuring to assign appropriate variables based on the sounds animals make.	// 8. Use destructuring to assign songs 2 and 4, and Kermit's job and partner
+
+
+// 2. Bolt the horse wandered off, so just give us four animals, and let's name them Bessie, Dolly, Babe, and Little.	const { k_name, k_color, k_job, k_partner } = k_muppet
+
+
+// 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of black_and_white, black, and pink.	const { song_1, song_2, song_3, song_4} = k_muppet.k_album.the_muppet_movie
 // Strings
 
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
